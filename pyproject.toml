@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "collector-world-wide-springs"
+version = "0.1.0"
+description = "Microservice to collect data about springs water from api and by scrolling"
+authors = ["sebajou <sebajou@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "collector_world_wide_springs"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.101.1"
+uvicorn = "^0.23.2"
+requests = "^2.31.0"
+beanie = "^1.21.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[tool.poetry.scripts]
+start = "collector_world_wide_springs.__main__:main"
+startdev = "poetry run python main.py"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
