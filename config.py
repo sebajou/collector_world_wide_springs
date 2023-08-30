@@ -7,6 +7,6 @@ MONGO_URI: str = os.getenv(
 
 MONGO_DB_NAME: str = os.getenv(
     "MONGO_DB_NAME",
-     "fastapi-tasks",
+     "fastapi-springs",
 )
 

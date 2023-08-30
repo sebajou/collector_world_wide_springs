@@ -8,5 +8,5 @@ class MongoDB:
         client = AsyncIOMotorClient(host)
         await init_beanie(
             database=AsyncIOMotorDatabase(client, database_name),
-            document_models=["models.Task"],
+            document_models=["models.Spring"],
         )

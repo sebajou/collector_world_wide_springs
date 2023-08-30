@@ -25,7 +25,7 @@ class SpringLocalisation(Document, BaseModel):
 
 class Spring(Document, BaseModel):
     class Settings:
-        name = "tasks"
+        name = ("springs")
 
     id: str
     name: str
